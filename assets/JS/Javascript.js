@@ -1,0 +1,10 @@
+const computerChoiceDisplay = document.getElementById('computer-choice');
+const playerChoiceDisplay = document.getElementById('player-choice');
+const showResult = document.getElementById('result');
+const possibleChoices = document.querySelectorAll('button');
+const pScore = document.getElementById('p-score');
+const cScore = document.getElementById('computer-score');
+let userChoice;
+let computerChoice;
+let playerScore = 0;
+let computerScore = 0;
