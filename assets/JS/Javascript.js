@@ -8,3 +8,31 @@ let userChoice;
 let computerChoice;
 let playerScore = 0;
 let computerScore = 0;
+
+possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
+    userChoice = e.target.id;
+    playerChoiceDisplay.innerHTML = userChoice;
+    randomComputerChoice();
+    getResult();
+    scoreBoard(getResult);
+    }))
+
+function randomComputerChoice() {
+    let randomNumber = Math.floor(Math.random() * 5)
+    if (randomNumber === 0) {
+      computerChoice = 'rock'
+    }
+    if (randomNumber === 1) {
+      computerChoice = 'scissors'
+    }
+    if (randomNumber === 2) {
+      computerChoice = 'paper'
+    }
+    if (randomNumber === 3) {
+      computerChoice = 'spock'
+    }
+    if (randomNumber === 4) {
+      computerChoice = 'lizard'
+    }
+computerChoiceDisplay.innerHTML = computerChoice
+    }
