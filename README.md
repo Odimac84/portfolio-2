@@ -43,6 +43,18 @@
 
 
 ## Rules section ##
+![picture of winner flowchart](/assets/images/chart.jpg)
+
+## Possible features to add  ##
+
+- 2 player
+
+- difficulty level
+
+- diffrent gametypes
+
+- best out of 7 rounds with or without a 2 point margin.
+
 
 
 # User stories
