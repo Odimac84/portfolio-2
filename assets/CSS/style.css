@@ -44,3 +44,24 @@ img {
     filter: invert(87%) sepia(77%) saturate(446%) hue-rotate(342deg) brightness(88%) contrast(97%);
     margin-bottom: 20px;
 }
+
+@media (max-width: 750px) {
+    #game-board {
+        margin: auto;
+        width: auto;
+        }
+    
+    #diagram {
+        margin: auto;
+        width: auto;
+        }
+    
+    h1 {
+        font-size: 180%;
+        width: 100%;
+        }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
