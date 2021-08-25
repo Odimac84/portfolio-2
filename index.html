@@ -12,40 +12,41 @@
     <title>portfolio 2</title>
 </head>
 <body>
-    <h1></h1>
-    <div>
-        <h3>
-            Your Choice
-        </h3>
-        <h3>
-            Computer Choice:
-        </h3>
-        <h3>
-            Who won:
-        </h3>
+    
+    <div id="heading">
+        <h1>ROCK, SCISSORS, PAPER, LIZARD OR SPOCK</h1>
     </div>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <div>
+    
+    <div id= "game-board">  
         <h3>
-            Current standings
+            Your choice:<span id="player-choice"></span> 
+        </h3>    
+        <h3 >
+            Computer Choice:<span id= "computer-choice"></span>
         </h3>
+        <h3>
+            Who won: <span id="result"></span>
+        </h3>
+
+        <button ><i class="fas fa-hand-rock" id="rock"></i></button>
+        <button ><i class="fas fa-hand-paper" id="paper"></i></button>
+        <button ><i class="fas fa-hand-scissors" id="scissors"></i></button>
+        <button ><i class="fas fa-hand-spock" id="spock"></i></button>
+        <button ><i class="fas fa-hand-lizard" id="lizard"></i></button>
+    
         <div>
-            Player:
-        </div>
-        <div>
-            Computer:
+            <h3>Current standings</h3>
+            <div>Player: <span id="player-score"></span></div>
+            <div> Computer: <span id="computer-score"></span></div>
         </div>
     </div>
-    <div>
-        <h2>
-            WHO WINS?
-        </h2>
+    
+    <div id= "diagram">
+        <h2>WHO WINS?</h2>
         <img src="assets/images/diagram.png" alt="picture of who wins over who.">
     </div>
+    <script src="https://kit.fontawesome.com/b83175b9a4.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/JS/Javascript.js"></script> 
 </body>
 <footer>
 
