@@ -13,7 +13,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     userChoice = e.target.id;
     playerChoiceDisplay.innerHTML = userChoice;
     randomComputerChoice();
-    
+    getResult();
     }))
 
 function randomComputerChoice() {
@@ -35,3 +35,39 @@ function randomComputerChoice() {
     }
 computerChoiceDisplay.innerHTML = computerChoice
     }
+    
+const getResult = () => {
+    switch (userChoice + computerChoice) {
+        case 'scissorspaper':
+        case 'scissorslizard':
+        case 'rockscissors':
+        case 'rocklizard':
+        case 'paperrock':
+        case 'paperspock':
+        case 'spockrock':
+        case 'spockscissors':
+        case 'lizardspock':
+        case 'lizardpaper':  
+        showResult.innerHTML = 'You win!'
+        break
+        case 'scissorsrock':
+        case 'scissorsspock':
+        case 'rockpaper':
+        case 'rockspock':
+        case 'paperscissors':
+        case 'paperlizard':
+        case 'spockpaper':
+        case 'spocklizard':
+        case 'lizardrock':
+        case 'lizardscissors':  
+        showResult.innerHTML = 'You lose!'
+        break
+        case 'paperpaper':
+        case 'scissorsscissors':
+        case 'rockrock':
+        case 'spockspock':
+        case 'lizardlizard':  
+        showResult.innerHTML = 'Draw!'
+        break
+    }
+}
