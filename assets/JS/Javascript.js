@@ -2,7 +2,7 @@ const computerChoiceDisplay = document.getElementById('computer-choice');
 const playerChoiceDisplay = document.getElementById('player-choice');
 const showResult = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('button');
-const pScore = document.getElementById('p-score');
+const pScore = document.getElementById('player-score');
 const cScore = document.getElementById('computer-score');
 let userChoice;
 let computerChoice;
@@ -14,6 +14,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     playerChoiceDisplay.innerHTML = userChoice;
     randomComputerChoice();
     getResult();
+    scoreBoard(getResult);
     }))
 
 function randomComputerChoice() {
@@ -71,3 +72,17 @@ const getResult = () => {
         break
     }
 }
+
+function scoreBoard(getResults) {
+    if (showResult.innerHTML === 'You win!') {
+      playerScore++;
+      pScore.innerText = playerScore;
+      cScore.innerText = computerScore;
+    } else if (showResult.innerHTML === 'You lose!') {
+      computerScore++;
+      pScore.innerText = playerScore;
+      cScore.innerText = computerScore;
+    } else {
+      return false;
+    }
+    }
