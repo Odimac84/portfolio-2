@@ -34,7 +34,7 @@ function randomComputerChoice() {
     if (randomNumber === 4) {
       computerChoice = 'lizard';
     }
-computerChoiceDisplay.innerHTML = computerChoice
+computerChoiceDisplay.innerHTML = computerChoice;
     }
     
 const getResult = () => {
