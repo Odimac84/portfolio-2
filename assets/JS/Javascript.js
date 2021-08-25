@@ -15,24 +15,24 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     randomComputerChoice();
     getResult();
     scoreBoard(getResult);
-    }))
+    }));
 
 function randomComputerChoice() {
-    let randomNumber = Math.floor(Math.random() * 5)
+    let randomNumber = Math.floor(Math.random() * 5);
     if (randomNumber === 0) {
-      computerChoice = 'rock'
+      computerChoice = 'rock';
     }
     if (randomNumber === 1) {
-      computerChoice = 'scissors'
+      computerChoice = 'scissors';
     }
     if (randomNumber === 2) {
-      computerChoice = 'paper'
+      computerChoice = 'paper';
     }
     if (randomNumber === 3) {
-      computerChoice = 'spock'
+      computerChoice = 'spock';
     }
     if (randomNumber === 4) {
-      computerChoice = 'lizard'
+      computerChoice = 'lizard';
     }
 computerChoiceDisplay.innerHTML = computerChoice
     }
@@ -49,8 +49,8 @@ const getResult = () => {
         case 'spockscissors':
         case 'lizardspock':
         case 'lizardpaper':  
-        showResult.innerHTML = 'You win!'
-        break
+        showResult.innerHTML = 'You win!';
+        break;
         case 'scissorsrock':
         case 'scissorsspock':
         case 'rockpaper':
@@ -61,17 +61,17 @@ const getResult = () => {
         case 'spocklizard':
         case 'lizardrock':
         case 'lizardscissors':  
-        showResult.innerHTML = 'You lose!'
-        break
+        showResult.innerHTML = 'You lose!';
+        break;
         case 'paperpaper':
         case 'scissorsscissors':
         case 'rockrock':
         case 'spockspock':
         case 'lizardlizard':  
-        showResult.innerHTML = 'Draw!'
-        break
+        showResult.innerHTML = 'Draw!';
+        break;
     }
-}
+};
 
 function scoreBoard(getResults) {
     if (showResult.innerHTML === 'You win!') {
