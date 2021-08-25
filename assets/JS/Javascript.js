@@ -13,8 +13,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     userChoice = e.target.id;
     playerChoiceDisplay.innerHTML = userChoice;
     randomComputerChoice();
-    getResult();
-    scoreBoard(getResult);
+    
     }))
 
 function randomComputerChoice() {
