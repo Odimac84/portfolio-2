@@ -7,6 +7,7 @@ body {
     text-align: center;
     color: #DDCF4D;
     font-size: 1.6rem;
+    display: grid;
 }
 
 #heading {
@@ -48,20 +49,13 @@ img {
 @media (max-width: 750px) {
     #game-board {
         margin: auto;
-        width: auto;
         }
     
-    #diagram {
-        margin: auto;
-        width: auto;
-        }
+    
     
     h1 {
         font-size: 180%;
         width: 100%;
         }
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+   
 }
