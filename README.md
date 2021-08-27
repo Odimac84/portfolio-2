@@ -1,4 +1,4 @@
-![picture of responsiveness]()
+![picture of responsiveness](/assets/images/responsive.jpg)
 
 
 # [LINK FOR LIVE VIEW](https://odimac84.github.io/portfolio-2/)

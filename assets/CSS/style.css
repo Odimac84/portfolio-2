@@ -8,6 +8,7 @@ body {
     color: #DDCF4D;
     font-size: 1.6rem;
     display: grid;
+    width: 100%;
 }
 
 #heading {
