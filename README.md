@@ -76,7 +76,7 @@ It has also passed both lighthouse and GTmetrix with flying colors.
 
 -As mentioned before one issue found is that the page loads in a zoomed state on a mobile device. i tried changing the initial-scale and one fix is to drop this to 0.4 but that break is in any other device.
 
--fixes
+Fixed this by adding by scaling the page when it goes under 500px so that it gets responsive even under this point.
 
 Pictures both for Readme.md and the flowchart on the page has been submitted to [tinypng](https://tinypng.com/) to to reduce the size of the pictures needed to be loaded saving me 40% off the pictures size. 
 

@@ -46,12 +46,20 @@ img {
 }
 
 @media (max-width: 750px) {
-    #game-board {
-        margin: auto;
-        }
-    
     h1 {
         font-size: 2rem;
         }
+
+   
+}
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+        }
+
+        body {
+            transform: scale(.6);
+            transform-origin: 0 0;
+         }
    
 }
