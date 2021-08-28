@@ -7,6 +7,13 @@ body {
     text-align: center;
     color: #DDCF4D;
     font-size: 1.6rem;
+    display: grid;
+    margin: auto;
+}
+.cointainer {
+    width: auto;
+    margin:0 auto;
+    max-width: 900px;
 }
 
 #heading {
@@ -17,44 +24,52 @@ body {
 #game-board {
     background-color: #000000;
     border: silver solid 3px;
+    max-width: 900px;
     margin: auto;
-    
 }
+
 button {
     background: none;
     border: none;
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     margin: 10% 5% 10% 5%;
     color: #DDCF4D;
 }
+
 h2 {
     font-size: 2.5rem;
 }
+
 #diagram {
     background-color: #000000;
     border: silver solid 3px;
-    margin: auto;
     margin-top: 2%;
+    max-width: 900px;
+    margin: auto;
 }
+
 img {
     filter: invert(87%) sepia(77%) saturate(446%) hue-rotate(342deg) brightness(88%) contrast(97%);
     margin-bottom: 20px;
-    object-fit: cover;
-}
-.cointainer {
-    object-fit: contain;
-    margin: auto;
-    max-width: 900px;
-    display: grid;
 }
 
 @media (max-width: 750px) {
-    #game-board {
-        margin: auto;
-        }
     h1 {
-        font-size: 180%;
-        width: 100%;
+        font-size: 2rem;
         }
+        button {
+            font-size: 3rem;
+        }
+
+   
+}
+@media (max-width: 420px) {
+    h1 {
+        font-size: 2rem;
+        }
+    body {
+        transform: scale(.6);
+        transform-origin: 0 0;
+    }
    
 }
