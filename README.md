@@ -31,7 +31,7 @@ I went for a simple look seeing that all the page holds is a game. 2 boxes 1 wit
 Below this I placed a flowchart that will show the player how the winner is declared if they dont know this before they play. 
 
 # Colors #
-choice of my colors is made so that there is a softer background and then colors that will mark out the game area and the rules area. 
+choice of my colors is made so that there is a softer background and then colors that will mark out the game area and the rules area. Colors showing on the cgart off whios winning is colored using a filter and therefor this filter isnt aviable on all browsers yet. but on the devices i tried it it showed up every time. 
 
 ![picture of page](/assets/images/gamearea.jpg)
 ![picture of winner flowchart](/assets/images/chart.jpg)
@@ -56,9 +56,13 @@ choice of my colors is made so that there is a softer background and then colors
 
 As a user i hope that the game is fun and that I will be able to win.
 
+As i user i would be able to help the owner and share my experience of the site and what i can do to help them improve. 
+
 ## Site Owner ##
 
 As a site owner i only wish that the player finds the game fun, games should be fun and entertaining.
+
+As a site owner i want feedback to help improve my site, this can be done using social medias as an example. 
 
 # Testing
 

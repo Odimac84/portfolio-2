@@ -53,6 +53,21 @@ img {
     margin-bottom: 20px;
 }
 
+.socialmedia {
+    text-align: center;
+}
+
+.socialmedia > li {
+    display: inline;
+}
+
+.socialmedia i {
+    font-size: 170%;
+    margin: 10px;
+    padding: 10px;
+    color: #DDCF4D;
+}
+
 @media (max-width: 750px) {
     h1 {
         font-size: 2rem;
