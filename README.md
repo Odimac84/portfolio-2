@@ -1,104 +1,153 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![picture of responsiveness](/assets/images/responsive.jpg)
 
-Welcome Odimac84,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+# [LINK FOR LIVE VIEW](https://odimac84.github.io/portfolio-2/)
 
-## Gitpod Reminders
+# Content
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+1. Introduction
+2. User experience (UX)
+3. Colors
+4. The page
+5. User stories
+6. Testing
+7. Deploying to github pages
+8. Validation
+9. Tech used
+10. Media used
+11. Credits
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# Introduction
+![picture of how my idea was from the start](/assets/images/idea.jpg)
+i tried to stay true to my plan about mainly how i wanted it to look. but some parts changed during the road. a fairly easy looking site with just one site thast holds a game built with JavaScript. 
 
-A blue button should appear to click: _Make Public_,
+# User experience (UX)
+I went for a simple look seeing that all the page holds is a game. 2 boxes 1 with the game and one with a flowchart for rules. 
+1 first section holds a fairly simple game of rock, paper, scissors, lizard, spock. its a fun way to spend some time, just playing away against the computer that gets a random symbol every time. paired with this we get the information about who picked what and who won the game aswell as a counter to keep track on whos winning in the long run. 
 
-Another blue button should appear to click: _Open Browser_.
+Below this I placed a flowchart that will show the player how the winner is declared if they dont know this before they play. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+# Colors #
+choice of my colors is made so that there is a softer background and then colors that will mark out the game area and the rules area. 
 
-To log into the Heroku toolbelt CLI:
+![picture of page](/assets/images/gamearea.jpg)
+![picture of winner flowchart](/assets/images/chart.jpg)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Possible features to add  ##
 
-------
+- A 2 player function where you either can choose by buttons at the same computer or play against eachother from diffrent computers. can also make this a multiplayer game if wished. 
 
-## Release History
+- This can be achived by adding an AI to the game that keeps tracks of patterns, or that the computer gets the upperhand with knowing the human pick and decides who wins. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- Adding more types of games or diffrent game types with 3 weapons or even adding more.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- best out of 7 rounds (with or without a 2 point margin for the win)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+# User stories
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## User ##
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+As a user i hope that the game is fun and that I will be able to win.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Site Owner ##
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+As a site owner i only wish that the player finds the game fun, games should be fun and entertaining.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+# Testing
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Page has been tested in diffrent browsers and on diffrent devices such as Chrome, IE, Mozilla. Devices tried are Laptop, Desktop, Tablet, Mobile. 
+The only problem I found was that mobile loads the page in a zoomed state. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+It has also passed both lighthouse and GTmetrix with flying colors. 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+![picture of lighthouse](/assets/images/lighthouse.jpg)
 
-## FAQ about the uptime script
+![picture of GTmetrix](/assets/images/GTmetrix.jpg)
 
-**Why have you added this script?**
+## Further testing 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+-As mentioned before one issue found is that the page loads in a zoomed state on a mobile device. i tried changing the initial-scale and one fix is to drop this to 0.4 but that break is in any other device.
 
-**How will this affect me?**
+Fixed this by adding by scaling the page when it goes under 500px so that it gets responsive even under this point.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+Pictures both for Readme.md and the flowchart on the page has been submitted to [tinypng](https://tinypng.com/) to to reduce the size of the pictures needed to be loaded saving me 40% off the pictures size. 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+![picture of tinypng](/assets/images/tinypng.jpg)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+# Deploying to github pages
 
-**So….?**
+The process for deployment is documented below:
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- Log into [GitHub](https://www.github.com)
 
-**Can I opt out?**
+- Go to the repository page for this project (https://github.com/Odimac84/portfolio-2)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+- Click on 'Settings' on the main menu over the file listing. (see red marking on picture)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+- Navigate down to 'GitHub Pages' and click link. (see picture, green marking)
 
-**Anything more?**
+- Select 'Branch: Main' from the menu. (see picture yellow marking)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- Click save. (see picture white marking)
 
----
+- This generates a live link for the website, which is now viewable publicly. (see picture purple marking)
 
-Happy coding!
+![picture of github](/assets/images/github.jpg)
+
+
+# Validation
+ All validations done on the page has been showing zero errors as shown in the pictures below. Most of the things corrected during the project has been adding semicolons i missed but that hasent been crucial for the code to run as intended. 
+
+
+### Links to validation images ###
+
+- [HTML](/assets/images/HTML.jpg)
+- [CSS](/assets/images/JigSaw.jpg)
+- [Javascript](/assets/images/JSvalidation.jpg)
+
+
+# Tech used
+
+The site is built using HTML5 and CSS3 and apart from that I have got certain elements from other sources that will be mentioned below.
+
+- [GitHub](https://www.github.com)
+Hold the respiratory for this project along with files.
+    
+- [Gitpod](https://www.gitpod.io)
+the platform ive been deploying my code on.
+    
+- [FontAwesome](https://fontawesome.com)
+for the icons used to symbolise the weapons of choice.
+     
+- [W3C Markup Validation Service](https://validator.w3.org)
+HTML validation
+    
+- [CSS Validation Service](https://jigsaw.w3.org/css-validator)
+CSS jigsaw validator.
+    
+- [JShint](https://jshint.com/)
+JavaScript validation
+    
+
+# Media
+
+- [Am I Responsive](http://ami.responsivedesign.is/)
+for the picture to show how responsive the site is on diffrent devices.
+    
+- [Wikimedia](https://commons.wikimedia.org/wiki/File:Rock_paper_scissors_lizard_spock.svg)
+the flowchart shown on the page for rules understanding
+    
+
+# Credit
+
+Credit goes out to the slack community for the endless discussions and the patience to keep talking to me about how to move this project forward. especially thanks to Mr_Bim_alumni and Eventyret_mentor the two off you been helping me more then you know. All those calls maybe didnt get me to change it all but some off your suggestions made it and the rest i will be taking along for the future. 
+
+Special thanks to Felipe Souza Alarcon aswell to find the time to respond to my questions and giving me tips and pointers where needed.
